@@ -1,0 +1,5 @@
+Whilst this is a good first implementation of my ideas to connect my theoretical knowledge with practical uses, some improvements do exist. I would like to refine the input fields
+such that only valid people with enough tweets for analysis are allowed. Additionally, I would like to add manual text processing using 'nltk' library instead of the built-in 
+mechanism of the 'TextBlob' library.
+A major limitation is the limits imposed by the Scraper API, limiting the number of tweets accessed which hinders the models true capabilities of finding genuiine sentimment differences.
+
