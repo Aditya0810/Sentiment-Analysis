@@ -2,4 +2,11 @@ Whilst this is a good first implementation of my ideas to connect my theoretical
 such that only valid people with enough tweets for analysis are allowed. Additionally, I would like to add manual text processing using 'nltk' library instead of the built-in 
 mechanism of the 'TextBlob' library.
 A major limitation is the limits imposed by the Scraper API, limiting the number of tweets accessed which hinders the models true capabilities of finding genuiine sentimment differences.
-
+Background Theory:
+1.'nltk' techniques
+  Using the 'tokenisation' and 'stop words' in this library, I attempted to retrieve the root word in each snippet of the tweet that is scraped through the API.
+  Then this root word is then searched in an extensive list of relevant positive and negative words and if a match is found the count of each sentiment is incremented by 1.
+2. 'Supervised Learning for Classification'
+  The data can be split in trainig and testing data. The training data can be lablled using built in sentiment classification functions. Then these results can be used to train
+  the model to make these predictions independently without the other libraries. This is done using a TF-IDF model that stands for Term Frequency, Inverse Document Frequency. This is
+  a method to quanitfy how important each word is that appears in a document.
